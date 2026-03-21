@@ -1,64 +1,53 @@
-# Contact Management System (C++)
+# GreenLife Organic Store Management System 🌱
 
-A **simple console-based contact management application** implemented in C++ using a **doubly linked list**.  
-This program allows users to add, view, search, edit, and delete contacts, as well as save and load them from a text file.
+A desktop-based retail management application built with **C#** and **Windows Forms (.NET Framework)**. This system is designed to streamline the daily operations of an organic grocery store, providing dedicated interfaces for both Store Administrators and Customers. 
 
----
+Data persistence is handled via **local file storage (.txt and .csv)**, making it a lightweight, easy-to-deploy solution without the need for complex database setups.
 
-## 📖 Overview
+## 🚀 Key Features
 
-The Contact Management System provides an easy way to manage a list of contacts directly through the console.  
-It supports basic CRUD operations (Create, Read, Update, Delete) and stores all contacts in a local text file for persistence.
+### 👨‍💼 Admin Features
+* **Dashboard Overview:** Real-time statistics on total products, active orders, and sales.
+* **Product Management:** Add, update, delete, and search for products. Includes automated low-stock warnings.
+* **Order Management:** View all customer orders, update order statuses (Pending, Shipped, Delivered), and export order history to **CSV**.
+* **Customer Management:** View registered customers and update their details.
+* **Promotions:** Apply percentage-based discounts to products.
+* **System Reports:** Generate summarized text reports for stock and sales tracking.
 
----
+### 🛒 Customer Features
+* **User Authentication:** Secure registration and login system.
+* **Product Browsing & Ordering:** View available inventory and place orders.
+* **Real-time Stock Updates:** Placing an order automatically deducts the item from the store's stock.
+* **Order Tracking:** Customers can view the real-time status of their placed orders.
+* **Profile Management:** Update personal contact details easily.
+* **Product Ratings:** Ability to rate purchased products.
 
-## ⚙️ Features
+## 💻 Tech Stack
+* **Language:** C#
+* **Framework:** .NET Framework (Windows Forms)
+* **IDE:** Microsoft Visual Studio
+* **Data Storage:** Local Flat Files (`.txt`, `.csv`)
+* **Architecture:** Object-Oriented Programming (OOP) with Layered UI/Logic separation.
 
-- ➕ Add new contacts (Name and Phone Number)
-- 📋 Display all saved contacts
-- 🔍 Search contacts by name or phone number
-- ✏️ Edit existing contact details
-- 🗑️ Delete a specific contact
-- 🔄 Delete all contacts
-- 💾 Save contacts to a text file (`contactbook.txt`)
-- 📂 Load contacts automatically on startup
+## 📂 Data Storage Mechanism
+The system uses simple text files stored in the `bin/Debug` folder to persist data across sessions:
+* `users.txt` - Stores registered customer credentials and details.
+* `products.txt` - Stores product inventory, pricing, and stock levels.
+* `orders.txt` - Stores placed orders and their current statuses.
+* `orders.csv` - Exported data file for admin reporting.
 
----
+## 🛠️ Getting Started (How to Run)
 
-## 🧩 Files Included
+### Prerequisites
+* Microsoft Visual Studio (2015 or newer recommended).
+* .NET Framework installed on your Windows machine.
 
-| File Name | Description |
-|------------|-------------|
-| `ContactManegmentsystem.cpp` | Main C++ source code implementing the full program |
-| `contactbook.txt` | Auto-generated file used to save and load contacts |
+### Installation
+ **Clone the repository:**
+   ```bash
+   git clone https://github.com/YourUsername/GreenLifeStore.git
 
----
 
-## 🛠 Requirements
-
-- A C++ compiler (e.g., `g++`, `clang++`)
-- Operating system: Windows / macOS / Linux
-- Command Prompt or Terminal access
-
----
-
-## 💻 How to Compile and Run
-
-```bash
-# Compile the program
-g++ ContactManegmentsystem.cpp -o contactbook
-
-# Run the program
-./contactbook        # For Linux or macOS
-contactbook.exe      # For Windows
-🧠 How It Works
-
-When the program starts, it asks for your name.
-
-A main menu is displayed with options to add, search, edit, delete, or view contacts.
-
-Contacts are stored in a doubly linked list structure in memory.
-
-When you exit the program, all contacts are saved in contactbook.txt.
-
-On the next run, the program automatically loads contacts from the file.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YourUsername/GreenLifeStore.git
